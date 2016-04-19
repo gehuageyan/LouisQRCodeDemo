@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.louisgeek.louisqrcodedemo.CreateActivity">
+
+    <EditText
+        android:id="@+id/id_et"
+        android:hint="输入内容"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/id_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_et"
+        android:text="生成二维码"
+        />
+    <Button
+        android:id="@+id/id_create_with_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_create"
+        android:text="生成带logo的二维码"
+        />
+
+    <ImageView
+        android:id="@+id/id_iv"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/id_create_with_logo"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/id_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_iv"
+        android:text="解析生成的二维码"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
